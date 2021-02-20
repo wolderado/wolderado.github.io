@@ -1,0 +1,88 @@
+.btn.btn-primary {
+}
+
+#custombtn {
+  background: rgba(29,53,87,0.39);
+  font-size: 16px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border: 3px dashed rgba(29,53,87,0.22);
+  color: #F1FAEE;
+}
+
+#custombtn:hover {
+  background: rgba(168, 218, 220,1);
+  font-size: 16px;
+  font-weight: 600;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border: 3px dashed rgba(29,53,87,0.22);
+  color: #1D3557;
+}
+
+#custombtn:active {
+  background: rgba(168, 218, 220,0.2);
+}
+
+#FilterOff {
+  background: rgba(69,123,157,0.86);
+  color: #f1faee;
+  border-radius: 16px;
+  margin-right: 4px;
+  margin-left: 4px;
+  border-width: 3px;
+  border-color: rgba(64,105,130,0.7);
+}
+
+#FilterOn {
+  background: rgba(230, 57, 70,0.86);
+  color: #f1faee;
+  border-radius: 16px;
+  margin-right: 4px;
+  margin-left: 4px;
+  border-width: 3px;
+  border-color: rgba(64,105,130,0.7);
+}
+
+#ProjectCard:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.7);
+}
+
+#ProjectCard {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+}
+
+.col {
+}
+
+.GoldenCard {
+  box-shadow: 0px 4px 8px rgba(233, 196, 106,0.3);
+  background-color: rgba(233, 196, 106,0.3);
+}
+
+#Overlay {
+  position: relative;
+  z-index: 1000;
+}
+
+#Overlay2 {
+  z-index: 1001;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.ContactClass:hover {
+  text-shadow: 2px 2px 4px rgba(168, 218, 220,1);
+  transform: scale(1);
+}
+
+.ContactClass {
+  transform: scale(1);
+}
+
