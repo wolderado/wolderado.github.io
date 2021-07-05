@@ -11,7 +11,17 @@ function InitializeProjects()
     
     projects.push(new Project("Corpoct", new Array('All','Highlight','Steam','Game','Strategy','2D','Rogue-lite','Procedural-Gen')));
     
-    projects.push(new Project("City-Defenders", new Array('All','Game','FPS','3D','Rogue-lite','Strategy','VR','Procedural-Gen','School Project')));
+    projects.push(new Project("TinyApocalypse", new Array('All','Game','FPS','3D','OtherEngine','Procedural-Gen','Jam Game','Pixel Art','Tense','Rogue-lite','Solo')));
+    
+    projects.push(new Project("AudioRunner", new Array('All','Game','2D','Casual','School Project','High-score')));
+    
+    projects.push(new Project("MonstrousFlavours", new Array('All','Game','3D','Story','School Project','VR','First Person')));
+    
+    projects.push(new Project("BattleCityInfinite", new Array('All','Game','School Project','Casual','Solo','High-score','Procedural-Gen','Rogue-lite','3D','OtherEngine')));
+        
+    projects.push(new Project("FlickWest", new Array('All','Game','School Project','Jam Game','Casual','Solo','3D','Multiplayer')));
+    
+    projects.push(new Project("City-Defenders", new Array('All','Game','FPS','3D','Strategy','VR','Procedural-Gen','School Project')));
     
     projects.push(new Project("LizardGen", new Array('All','Game','FPS','3D','Experimental','Procedural-Gen','Jam Game','Casual','Solo')));
     
@@ -82,6 +92,8 @@ function InitializeProjects()
     projects.push(new Project("TetrisRunner2", new Array('Unfinished','Highschool')));
     
     projects.push(new Project("Evolution", new Array('All','Software','Experimental','Solo')));
+    
+
     
     projects.push(new Project("GameApp", new Array('Unfinished')));
     
