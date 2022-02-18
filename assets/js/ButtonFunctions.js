@@ -27,7 +27,7 @@ function InitializeProjects()
     
     projects.push(new Project("WhoTookMyWheels", new Array('All','Jam Game','3D','Game','Procedural-Gen','High-score','Solo')));
     
-    projects.push(new Project("DoubleMe", new Array('All','Jam Game','Procedural-Gen','Highlight','3D','FPS','Rogue-lite','High-score','Pixel Art','Game','Horror','Solo','School Project')));
+    projects.push(new Project("DoubleMe", new Array('All','Jam Game','Procedural-Gen','3D','FPS','Rogue-lite','High-score','Pixel Art','Game','Horror','Solo','School Project')));
     
     projects.push(new Project("Hellblaze", new Array('All','Jam Game','2D','High-score','Pixel Art','Game','WebGL','Solo','Casual')));
     
@@ -92,6 +92,10 @@ function InitializeProjects()
     projects.push(new Project("TetrisRunner2", new Array('Unfinished','Highschool')));
     
     projects.push(new Project("Evolution", new Array('All','Software','Experimental','Solo')));
+    
+    projects.push(new Project("DoubleMeRemake", new Array('All','Procedural-Gen','Highlight','3D','FPS','Rogue-lite','High-score','Pixel Art','Game','Horror','Solo','School Project')));
+    
+    projects.push(new Project("Deviant", new Array('All','Procedural-Gen','2D','Pixel Art','Casual','Web','Jam Game','Game','Solo')));
     
 
     
