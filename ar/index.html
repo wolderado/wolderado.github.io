@@ -1,0 +1,62 @@
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- <script src="vendor/aframe/build/aframe.min.js"></script> -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<!-- <script src="vendor/aframe/build/aframe.js"></script> -->
+<!-- include for artoolkit trackingBackend -->
+<script src='aframe_lib/artoolkit.min.js'></script>
+<script src='aframe_lib/artoolkit.api.js'></script>
+<!-- include for aruco trackingBackend -->
+<script src='aframe_lib/svd.js'></script>
+<script src='aframe_lib/posit1.js'></script>
+<script src='aframe_lib/cv.js'></script>
+<script src='aframe_lib/aruco.js'></script>
+<script src='aframe_lib/threex-arucocontext.js'></script>
+<script src='aframe_lib/threex-arucodebug.js'></script>
+<!-- include for tango trackingBackend -->
+<script src='aframe_lib/THREE.WebAR.js'></script>
+<!-- include ar.js -->
+<script src='aframe_lib/signals.min.js'></script>
+<script src='aframe_lib/threex-artoolkitprofile.js'></script>
+<script src='aframe_lib/threex-artoolkitsource.js'></script>
+<script src='aframe_lib/threex-artoolkitcontext.js'></script>
+<script src='aframe_lib/threex-arbasecontrols.js'></script>
+<script src='aframe_lib/threex-armarkercontrols.js'></script>
+<script src='aframe_lib/threex-arsmoothedcontrols.js'></script>
+<script src='aframe_lib/threex-hittesting-plane.js'></script>
+<script src='aframe_lib/threex-hittesting-tango.js'></script>
+<script src='aframe_lib/threex-armarkerhelper.js'></script>
+<script src='aframe_lib/arjs-utils.js'></script>
+<script src='aframe_lib/arjs-session.js'></script>
+<script src='aframe_lib/arjs-anchor.js'></script>
+<script src='aframe_lib/arjs-hittesting.js'></script>
+<script src='aframe_lib/arjs-tangovideomesh.js'></script>
+<script src='aframe_lib/arjs-tangopointcloud.js'></script>
+<script src='aframe_lib/arjs-debugui.js'></script>
+<script src='aframe_lib/threex-armultimarkerutils.js'></script>
+<script src='aframe_lib/threex-armultimarkercontrols.js'></script>
+<script src='aframe_lib/threex-armultimarkerlearning.js'></script>
+<!-- include aframe-ar.js -->
+<script src="aframe_lib/system-arjs.js"></script>
+<script src="aframe_lib/component-anchor.js"></script>
+<script src="aframe_lib/component-hit-testing.js"></script>
+<!-- start the body of your page -->
+
+
+
+
+<body style='margin : 0px; overflow: hidden;'>
+<a-scene embedded arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;">
+    <a-assets>
+        <video id="vid-1" loop="true" crossorigin="anonymous" 
+               src='GulbabaUzun.mp4'></video>
+    </a-assets>
+
+    <a-marker preset='custom' type='pattern' url='marker.jpg' vidhandler="target: #vid-1, #vid-2, #vid-pg4">
+        <a-plane width="1.78" height="1"  rotation='270 0 0' src='#vid-1'></a-plane>
+        <a-video width="1.32" height="1" rotation='270 0 0' position='0 0.5 0' src='#vid-pg4'></a-video>
+        <a-video width="1.78" height="1" rotation='270 0 0' position='0 1 0' src='#vid-2'></a-video>
+    </a-marker>
+
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
