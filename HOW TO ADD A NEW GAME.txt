@@ -1,0 +1,83 @@
+================================================================================
+  HOW TO ADD A NEW GAME
+================================================================================
+
+Add a new entry to games.json. Games are pulled from that file directly,
+and order matters — the list is displayed in the order it appears in the file.
+
+--------------------------------------------------------------------------------
+  ENTRY FORMAT
+--------------------------------------------------------------------------------
+
+  {
+    "show": 1,
+    "title": "Title of the game",
+    "description": "A short description about the game.",
+    "cover": "https://img.itch.zone/...",
+    "link": "https://store.steampowered.com/...",
+    "tags": ["Commercial", "Unity"],
+    "play": "",
+    "download": ""
+  },
+
+--------------------------------------------------------------------------------
+  FIELDS
+--------------------------------------------------------------------------------
+
+  show          1 or 0. Controls whether the game appears on the All Projects
+                page. Even if set to 0, the cover image still shows up in the
+                animated intro background grid.
+
+  title         Title of the game.
+
+  description   A short description shown on the project card.
+
+  cover         URL to the cover image. Can be an external link (itch.io,
+                Steam, etc.) or a local file in the /images/ folder.
+                Example (external): "https://img.itch.zone/..."
+                Example (local):    "images/my_game_cover.png"
+
+  link          Link to the store page (Steam, itch.io, GameJolt, etc.).
+                Leave empty if there is no store page.
+
+  tags          List of tags used for filtering on the Projects page.
+                Adding a string that doesn't exist yet will automatically
+                create a new tag button.
+                Example: ["Horror", "Unity", "Game Jam"]
+
+  play          Name used to locate the browser-playable build.
+                Set "play" to the name of the game folder/zip (e.g. "MyGame").
+                Leave empty if the game is not browser-playable.
+
+                There are two ways to serve a browser game:
+
+                  OPTION A — ZIP (recommended, smaller repo size)
+                    1. Zip the game's build files with everything at the ROOT
+                       of the zip (no subfolder). Name it exactly "MyGame.zip".
+                    2. Place MyGame.zip inside /playbrowser/
+                    3. Set "play": "MyGame"
+                    The service worker (game-sw.js) will automatically detect
+                    the zip and extract files at runtime.
+
+                  OPTION B — Folder (simpler, larger repo)
+                    1. Create a folder inside /playbrowser/ named "MyGame"
+                    2. Place the build files + index.html inside it
+                    3. Set "play": "MyGame"
+
+                UNITY .gz COMPRESSION FIX:
+                  If Unity exported with gzip compression, the game will fail
+                  to load on most static hosts. To fix:
+                    1. Decompress the .gz files (PowerShell or 7-Zip)
+                    2. Remove ".gz" from the filenames in index.html
+                       (dataUrl, frameworkUrl, codeUrl fields)
+
+                DISABLING POINTER LOCK (for non-FPS games):
+                  Add this line inside <body> in the game's index.html to
+                  prevent the mouse from being captured/locked:
+                    <script>HTMLCanvasElement.prototype.requestPointerLock = function() {};</script>
+
+  download      Filename of a downloadable .zip in the /games/ folder.
+                Currently unused because GitHub Pages has a 1GB size limit,
+                but the system is wired up and ready when needed.
+
+================================================================================

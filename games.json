@@ -1,0 +1,622 @@
+[
+  {
+    "show": 1,
+    "title": "It Has My Face",
+    "description": "IT HAS YOUR FACE. Now it wants your life. Hide, seek, and try to kill your clone in this deceptively simple first-person horror roguelite.",
+    "cover": "https://img.itch.zone/aW1nLzIxMTA0NTc2LmpwZw==/original/xgYWhY.jpg",
+    "link": "https://store.steampowered.com/app/2506530/It_Has_My_Face/",
+    "tags": [
+      "Commercial",
+      "Unity"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Samurai Survivors",
+    "description": "Slash through hordes of enemies and become the ultimate swordmaster! In this action rogue-lite, choose from variety of weapons and upgrades to create game-breaking synergies.",
+    "cover": "https://img.itch.zone/aW1nLzExMjU5ODQ1LmdpZg==/original/xBApT0.gif",
+    "link": "https://store.steampowered.com/app/2317960/Samurai_Survivors/",
+    "tags": [
+      "Commercial",
+      "Unity"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Corpoct",
+    "description": "Test your wits as well as your ability to lead an expedition in this rogue-like space dungeon-crawler.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1135860/header.jpg?t=1728542453",
+    "link": "https://store.steampowered.com/app/1135860/Corpoct/",
+    "tags": [
+      "Commercial",
+      "Unity"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Red Frontier 2",
+    "description": "Explore beyond the red wastelands and hide from human-sized centipedes in the darkest corners.",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1293480/header.jpg?t=1730369936",
+    "link": "https://store.steampowered.com/app/1293480/Red_Frontier_2/",
+    "tags": [
+      "Commercial",
+      "Unity"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Slot of Death",
+    "description": "You've made a deal with the devil. Now you must play slot machines to feed him or it will feed on you!",
+    "cover": "https://img.itch.zone/aW1nLzIzNDgxODUyLnBuZw==/original/756Hsr.png",
+    "link": "https://wolderado.itch.io/slotofdeath",
+    "play": "SlotOfDeath",
+    "tags": [
+      "Godot",
+      "Browser"
+    ],
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Swords & Dragons",
+    "description": "A voxel army management game with sword based combat.",
+    "cover": "https://i.gjcdn.net/public-data/games/6/165/401915/media/game-description/5d09167da5589-8tmaixj6.gif",
+    "link": "https://gamejolt.com/games/SwordsAndDragons/401915",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Sumo-ning",
+    "description": "In this short and fun arcade, feed your sumo and become the champion of the ring!",
+    "cover": "https://img.itch.zone/aW1nLzE1NzcyMjA2LnBuZw==/original/dW9KYe.png",
+    "link": "https://wolderado.itch.io/sumo-ning",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Sumoning"
+  },
+  {
+    "show": 1,
+    "title": "Clonizer",
+    "description": "A roguelike deckbuilder where I helped as a programmer focusing on game feel & juice",
+    "cover": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2449450/header.jpg?t=1777444153",
+    "link": "https://store.steampowered.com/app/2449450/Clonizer/",
+    "tags": [
+      "Commercial",
+      "Unity"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "AstroBlast 3D",
+    "description": "Destroy asteroids, collect resources, and upgrade your ship as you survive as long as you can against alien fleets!",
+    "cover": "https://img.itch.zone/aW1nLzE0NTk1MTkzLnBuZw==/original/DLtdI0.png",
+    "link": "https://wolderado.itch.io/astroblast-3d",
+    "tags": [
+      "Custom Engine",
+      "Browser"
+    ],
+    "play": "AstroBlast3D",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Rush Station",
+    "description": "It’s rush hour and it’s your job to pack as many people as you can into train wagons! Push & Kick to cram as much people as possible!",
+    "cover": "https://img.itch.zone/aW1nLzEzNTg0NjcxLmdpZg==/original/YFz80C.gif",
+    "link": "https://wolderado.itch.io/rush-station",
+    "play": "RushStation",
+    "tags": [
+      "Godot",
+      "Browser"
+    ],
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Deliver Me",
+    "description": "In this short and fun arcade, compete with other slimes to become the best sacrifice to the holy fish god!",
+    "cover": "https://img.itch.zone/aW1nLzEyMDQxODA3LnBuZw==/original/Rt14ur.png",
+    "link": "https://wolderado.itch.io/deliverme",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "DeliverMe"
+  },
+  {
+    "show": 1,
+    "title": "Random Picross Nanogram",
+    "description": "Randomly generatd Picross game. I was tired of playing bad picross games. So I've made my version!",
+    "cover": "https://img.itch.zone/aW1nLzEwMjU2ODE3LmdpZg==/original/Y39dfN.gif",
+    "link": "https://wolderado.itch.io/random-picross-nanogram",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Picross"
+  },
+  {
+    "show": 1,
+    "title": "The Forgotten Crawler",
+    "description": "You’re stuck in an old dungeon crawler game that is being deleted. Will you perish or stop the corruption?",
+    "cover": "https://img.itch.zone/aW1nLzEwMjAxNzM0LmdpZg==/original/LVqNJL.gif",
+    "link": "https://wolderado.itch.io/the-forgotten-dungeon-crawler",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "ForgottenCrawler"
+  },
+  {
+    "show": 1,
+    "title": "Death Runner",
+    "description": "You've made a deal with Death. Destroy souls from both worlds until your endless contract is done.",
+    "cover": "https://img.itch.zone/aW1nLzk5Mzk4NzUuZ2lm/original/OskhEj.gif",
+    "link": "https://wolderado.itch.io/death-runner",
+    "tags": [
+      "Unreal Engine"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Plants Versus Slimes",
+    "description": "Destroy slimes as you mix different colored plants.",
+    "cover": "https://img.itch.zone/aW1nLzk3MjMzMDYucG5n/original/piGAp7.png",
+    "link": "https://wolderado.itch.io/plants-versus-slimes",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "PlantsVersusSlimes"
+  },
+  {
+    "show": 1,
+    "title": "Heat Flow",
+    "description": "Heat Flow is a strategy game where you build stacking towers and manage your engine's heat.",
+    "cover": "https://img.itch.zone/aW1nLzg1ODk2MTgucG5n/original/07784y.png",
+    "link": "https://wolderado.itch.io/heat-flow",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Deviant",
+    "description": "Deviant is a reverse-horror game where you play as a robot that periodically becomes murderously unstable. Destroy the core and free yourself from the humans!",
+    "cover": "https://img.itch.zone/aW1nLzcxMjQxNzMucG5n/original/auDAMY.png",
+    "link": "https://wolderado.itch.io/deviant",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Deviant"
+  },
+  {
+    "show": 1,
+    "title": "Tiny Apocalypse",
+    "description": "A tiny FPS zombie apocalypse game in 200kb. The game is made for #4MBJam.  The design objective was to create a game in the smallest file size possible.",
+    "cover": "https://img.itch.zone/aW1nLzYzNDMyNzYucG5n/original/K9antU.png",
+    "link": "https://wolderado.itch.io/tiny-apocalypse",
+    "tags": [
+      "Custom Engine"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Monstrous Flavours",
+    "description": "A short game about managing a potion store while chatting with customers.",
+    "cover": "https://img.itch.zone/aW1nLzYyODE3MTEucG5n/original/%2FKGqZP.png",
+    "link": "https://wolderado.itch.io/monstrous-flavours",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Battle City: Infinite",
+    "description": "An old arcade game reimagined with a rogulike twist and in Unreal Engine.",
+    "cover": "https://img.itch.zone/aW1nLzYyNzU0ODYucG5n/original/5oHx6N.png",
+    "link": "https://wolderado.itch.io/battle-city-infinite",
+    "tags": [
+      "Unreal Engine"
+    ],
+    "play": "",
+    "download": ""
+  },
+  {
+    "show": 1,
+    "title": "Flick West",
+    "description": "A short fun multiplayer game about the western showdown.",
+    "cover": "https://img.itch.zone/aW1nLzYxNDM3OTQucG5n/315x250%23c/j0oYvT.png",
+    "link": "https://wolderado.itch.io/flickwest",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "City Defenders",
+    "description": "A VR strategy game where you defend randomly generated cities from alien invasions",
+    "cover": "https://img.itch.zone/aW1nLzUwNzgyMDMuZ2lm/original/ZJ%2Bn7X.gif",
+    "link": "https://wolderado.itch.io/city-defenders",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Journey To Home",
+    "description": "An experimental school project about the feeling of anxiety.",
+    "cover": "https://img.itch.zone/aW1nLzUwNjI2NzcucG5n/315x250%23c/7E7qtB.png",
+    "link": "https://wolderado.itch.io/journey-to-home",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Lizard Gen",
+    "description": "Discover thousands of uniquely generated lizards and take pictures of your favorites!",
+    "cover": "https://img.itch.zone/aW1nLzQ3MzczMDgucG5n/315x250%23c/DqJm%2Bj.png",
+    "link": "https://wolderado.itch.io/lizardgen",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Who Took My Wheels",
+    "description": "Someone took your wheels? Well, it's still a car isn't it?",
+    "cover": "https://img.itch.zone/aW1nLzQzMTQ3NTAucG5n/315x250%23c/eDxe1J.png",
+    "link": "https://wolderado.itch.io/whotookmywheels",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Conversus",
+    "description": "Your body has been stolen by a rival king. Can you return to your body and save the kindom?",
+    "cover": "https://img.itch.zone/aW1nLzM3Mjk0MzkuZ2lm/original/nsDM7f.gif",
+    "link": "https://wolderado.itch.io/conversus",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "DoubleMe",
+    "description": "Jam version of It Has My face. Your clone is hiding among the crowd with a knife in his hand and you've got one bullet.",
+    "cover": "https://img.itch.zone/aW1nLzI4MzkzMjcuZ2lm/original/oJ4XXm.gif",
+    "link": "https://wolderado.itch.io/doubleme",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Hellblaze",
+    "description": "It's a game about feeding the sun to post-pone the destruction of humanity.",
+    "cover": "https://img.itch.zone/aW1nLzIyMTYxOTUucG5n/315x250%23c/A6buny.png",
+    "link": "https://wolderado.itch.io/hellblaze",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Hellblaze"
+  },
+  {
+    "show": 1,
+    "title": "Ancestry",
+    "description": "Bullet-hell game made for Ludum dare 44",
+    "cover": "https://img.itch.zone/aW1nLzIwNjExODIuZ2lm/original/dGI9OQ.gif",
+    "link": "https://wolderado.itch.io/ancestry",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Ancestry"
+  },
+  {
+    "show": 1,
+    "title": "Undermine Defense",
+    "description": "Rock mining tower defense game with procedural maps.",
+    "cover": "https://img.itch.zone/aW1nLzE4NDkwMjMucG5n/original/DHUNiS.png",
+    "link": "https://wolderado.itch.io/undermine-defense",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "UndermineDefense"
+  },
+  {
+    "show": 1,
+    "title": "Universia",
+    "description": "Explore ​the randomly generated universe with unique planets and ​stars.",
+    "cover": "https://img.itch.zone/aW1nLzE1OTEwNTQucG5n/original/vu12%2Fo.png",
+    "link": "https://wolderado.itch.io/universia",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Silent Quest",
+    "description": "A short dialogue-based adventure game in which the player is deaf.",
+    "cover": "https://img.itch.zone/aW1hZ2UvMzAwMzI2LzE0NjkwODEucG5n/original/%2BblYh7.png",
+    "link": "https://wolderado.itch.io/silentquest",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "SilentQuest"
+  },
+  {
+    "show": 1,
+    "title": "P.A.M.U",
+    "description": "FPS game which you control a mech while surviving waves of enemies.",
+    "cover": "https://img.itch.zone/aW1hZ2UvMjk4ODY2LzE0NjQ5OTcuZ2lm/original/jZv8dC.gif",
+    "link": "https://wolderado.itch.io/pamu",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Big Crunch",
+    "description": "Space is collapsing into itself! Try to escape as long as you can before getting swallowed up!",
+    "cover": "https://img.itch.zone/aW1hZ2UvMjkwNjg2LzE0MTcwNjcucG5n/315x250%23c/GOPdBI.png",
+    "link": "https://wolderado.itch.io/big-crunch",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "BigCrunch"
+  },
+  {
+    "show": 1,
+    "title": "Marslag",
+    "description": "Marslag is a game where you're controlling a rover on mars with a huge time lag​.",
+    "cover": "https://img.itch.zone/aW1hZ2UvMjc3MjEyLzEzNDQwNzkucG5n/original/yOSfDJ.png",
+    "link": "https://wolderado.itch.io/marslag",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Marslag"
+  },
+  {
+    "show": 1,
+    "title": "Maryo's Journey",
+    "description": "Meta platformer game with a heavy emphasis on comedic dialogue.",
+    "cover": "https://img.itch.zone/aW1hZ2UvMjQwNDg5LzExNTA2NTQuZ2lm/original/J9ZHif.gif",
+    "link": "https://wolderado.itch.io/the-maryos-journey",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "MaryosJourney"
+  },
+  {
+    "show": 1,
+    "title": "Hard Tank",
+    "description": "Random generated tanks combined with classical Battle City's gameplay.",
+    "cover": "https://img.itch.zone/aW1hZ2UvMjEzMDUwLzEwMDcxNjAucG5n/original/Zz4OI%2F.png",
+    "link": "https://wolderado.itch.io/hard-tank",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "HardTank"
+  },
+  {
+    "show": 1,
+    "title": "Red Frontier",
+    "description": "It's an open-world horror game in which player has to out-think a giant snake roaming through the valley. ",
+    "cover": "https://img.itch.zone/aW1hZ2UvMTkxNTg3LzkyNDAzNC5wbmc=/315x250%23c/dJ0zZt.png",
+    "link": "https://wolderado.itch.io/redfrontier",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "The Unhuman",
+    "description": "The Unhuman is a game which you're a robot. You have limited power left and it's your decision how to spend it. Will you sacrifice yourself for a human?",
+    "cover": "https://img.itch.zone/aW1hZ2UvMTYzMzcyLzc1MjUwMS5wbmc=/315x250%23c/bSqdoD.png",
+    "link": "https://wolderado.itch.io/unhuman",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Minor Alternative Destroyer",
+    "description": "A short fun little endless platformer game.",
+    "cover": "https://img.itch.zone/aW1hZ2UvMTM3MDgxLzYzNTAwMC5naWY=/original/azq0i6.gif",
+    "link": "https://wolderado.itch.io/mad",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Mad"
+  },
+  {
+    "show": 1,
+    "title": "Vardolind",
+    "description": "A short first-person choice based game about a shapshifting monster who kidnapped your son.",
+    "cover": "https://img.itch.zone/aW1hZ2UvOTc2NDkvNDU3NDg2LnBuZw==/315x250%23c/OpYQF3.png",
+    "link": "https://wolderado.itch.io/vardolind",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Final Thoughts",
+    "description": "A short horror game where you play as a sorcerer losing their mind.",
+    "cover": "https://m.gjcdn.net/game-thumbnail/500/178695-crop0_0_589_331-4dnpaxts-v4.webp",
+    "link": "https://gamejolt.com/games/final-thoughts/178695",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Outer Space",
+    "description": "A cancelled project about surviving on a spaceship.",
+    "cover": "https://img.itch.zone/aW1hZ2UvNjM4OTIvMjg4MzI2LnBuZw==/315x250%23c/B5ZBvc.png",
+    "link": "https://wolderado.itch.io/vardolind",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Tetris Runner",
+    "description": "My first jam game which is a first person endless runner",
+    "cover": "https://m.gjcdn.net/game-thumbnail/500/80176-crop142_0_1224_609-cy7ntjng-v4.webp",
+    "link": "https://wolderado.itch.io/tetris-runner",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Plastic Soldiers",
+    "description": "An FPS game where you play as a green plastic soldier. One of my first Unity games!",
+    "cover": "https://m.gjcdn.net/game-thumbnail/500/76388-crop111_0_707_335-avu75fnv-v4.webp",
+    "link": "https://gamejolt.com/games/plastic-soldiers/76388",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Fallen Pit",
+    "description": "",
+    "cover": "https://m.gjcdn.net/game-thumbnail/500/61279-crop0_0_1023_575-uvpcadie-v4.webp",
+    "link": "",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Loop Out",
+    "description": "Simple jam game about breakout meets time-travel ",
+    "cover": "https://img.itch.zone/aW1hZ2UvMjQ4OTc3LzExODk0NTAucG5n/315x250%23c/zPgf5S.png",
+    "link": "https://wolderado.itch.io/loopout",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": "",
+    "play": "Loopout"
+  },
+  {
+    "show": 1,
+    "title": "Audio Runner",
+    "description": "A school project where you can play only with audio.",
+    "cover": "https://img.itch.zone/aW1nLzYzMDczNzQucG5n/315x250%23c/IjkkEN.png",
+    "link": "",
+    "tags": [
+      "Unity"
+    ],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "WoldOS Console",
+    "description": "A custom developer console to help me speed up my debugging process",
+    "cover": "images/capsule_console.jpg",
+    "link": "",
+    "tags": [],
+    "download": "",
+    "play": ""
+  },
+  {
+    "show": 1,
+    "title": "Evolution Sim",
+    "description": "A software to simulate evolution.",
+    "cover": "images/capsule_evolution.jpg",
+    "link": "",
+    "tags": [],
+    "play": "",
+    "download": ""
+  }
+]

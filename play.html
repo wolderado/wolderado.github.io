@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    <title>Play — Salih Ünal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #000; }
+    </style>
+</head>
+
+<body>
+    <script>
+        (async () => {
+        const game = location.hash ? decodeURIComponent(location.hash.slice(1)) : null;
+
+        if (!game) {
+            document.body.innerHTML = '<p style="color:#fff;font-family:sans-serif;padding:2rem">No game specified.</p>';
+        } else {
+            document.title = game + ' — Play';
+
+            // Register service worker so it can serve files from the game's zip
+            if ('serviceWorker' in navigator) {
+                await navigator.serviceWorker.register('/game-sw.js', { scope: '/' });
+                await navigator.serviceWorker.ready;
+            }
+
+            // Compute absolute URL before any state changes
+            const absoluteBase = location.origin + '/playbrowser/' + game + '/';
+
+            // Change browser URL first so all relative paths in the game resolve correctly
+            history.replaceState({}, '', absoluteBase);
+
+            // Fetch using absolute URL — avoids path doubling after replaceState
+            fetch(absoluteBase)
+                .then(r => r.text())
+                .then(html => {
+                    const pointerLockScript = `<script>
+                        window.addEventListener('load', function() {
+                            var canvas = document.querySelector('canvas');
+                            if (!canvas) return;
+                            canvas.addEventListener('click', function() {
+                                if (!document.pointerLockElement) canvas.requestPointerLock();
+                            });
+                        });
+                        window.addEventListener('keydown', function(e) {
+                            var scrollKeys = [' ', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'PageUp', 'PageDown', 'Home', 'End'];
+                            if (scrollKeys.indexOf(e.key) !== -1) e.preventDefault();
+                        });
+                    <\/script>`;
+
+                    // No <base> tag needed — URL is already correct from replaceState
+                    const injected = html
+                        .replace(/<head>/i, '<head><style>html,body{background:#000!important;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;}canvas{display:block;}</style>')
+                        .replace(/<\/body>/i, pointerLockScript + '</body>');
+
+                    document.open();
+                    document.write(injected);
+                    document.close();
+
+                    const btn = document.createElement('button');
+                    btn.textContent = '⛶ Fullscreen';
+                    btn.style.cssText = 'position:fixed;bottom:1rem;right:1rem;z-index:9999;background:rgba(0,0,0,0.6);color:#fff;border:1px solid rgba(255,255,255,0.3);border-radius:6px;padding:6px 12px;font-size:0.85rem;cursor:pointer;opacity:0.4;transition:opacity 0.2s;';
+                    btn.onmouseenter = () => btn.style.opacity = '1';
+                    btn.onmouseleave = () => btn.style.opacity = '0.4';
+                    btn.onclick = () => document.documentElement.requestFullscreen?.();
+                    document.body.appendChild(btn);
+                })
+                .catch(() => window.location.replace(absoluteBase));
+        }
+        })();
+    </script>
+</body>
+
+</html>

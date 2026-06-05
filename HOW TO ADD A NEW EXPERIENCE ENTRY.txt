@@ -1,0 +1,68 @@
+================================================================================
+  HOW TO ADD A NEW EXPERIENCE ENTRY
+================================================================================
+
+Open scripts/experience_entry.js and call createEntry() at the bottom of the
+file. Entries appear in the order they are added.
+
+--------------------------------------------------------------------------------
+  ENTRY FORMAT
+--------------------------------------------------------------------------------
+
+  createEntry({
+      link:             "https://store.steampowered.com/...",
+      youtubeId:        "VwLKS-6fnK4",
+      image:            "",
+      title:            "Game or Project Title",
+      role:             "Lead Developer",
+      company:          "Company Name",
+      year:             "Jan 2022 - Apr 2026",
+      description:      "A short description of the project.",
+      responsibilities: [
+          "Responsibility one.",
+          "Responsibility two.",
+          "Responsibility three.",
+      ]
+  });
+
+--------------------------------------------------------------------------------
+  FIELDS
+--------------------------------------------------------------------------------
+
+  link              URL to the store page or project page (Steam, itch.io,
+                    etc.). Shows a small arrow icon next to the title.
+                    Leave empty if there is no link.
+
+  youtubeId         YouTube video ID for the embed (the part after "v=" in
+                    the URL). Example: "VwLKS-6fnK4" from
+                    https://www.youtube.com/watch?v=VwLKS-6fnK4
+                    If both youtubeId and image are set, youtubeId takes
+                    priority.
+
+  image             URL or local path to a still image if there is no video.
+                    Used when youtubeId is empty.
+                    Example (external): "https://shared.fastly.steamstatic.com/..."
+                    Example (local):    "images/my_project.jpg"
+
+  title             Title of the game or project.
+
+  role              Your job title / role on the project.
+                    Displayed as a small badge on the top-right of the entry.
+                    Leave empty to hide it.
+
+  company           Company or studio name.
+                    Displayed alongside the year on the same line.
+                    Leave empty to hide it.
+
+  year              Date range of the project (e.g. "Jan 2022 - Apr 2026").
+                    Leave empty to hide it.
+
+  description       A paragraph describing the project.
+                    HTML is supported (e.g. <b>, <em>, <a href="...">).
+
+  responsibilities  Array of bullet points listing your responsibilities.
+                    HTML is supported inside each string.
+                    Leave as an empty array [] or omit entirely to hide
+                    the section.
+
+================================================================================

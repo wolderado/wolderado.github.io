@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Wolderado — Games</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100%; height: 100%;
+    background: #080808;
+    overflow: hidden;
+  }
+
+  #grid {
+    display: grid;
+    gap: 3px;
+    animation: scroll-grid var(--duration, 999s) linear infinite;
+  }
+
+  @keyframes scroll-grid {
+    from { transform: translate3d(var(--start-x, 0px), var(--start-y, 0px), 0); }
+    to   { transform: translate3d(var(--end-x, 0px),   var(--end-y, 0px),   0); }
+  }
+
+  .cell {
+    position: relative;
+    overflow: hidden;
+    background: #181818;
+    aspect-ratio: 1 / 1;
+  }
+
+  .cell img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  .cell.ready img { opacity: 1; }
+</style>
+</head>
+<body>
+<div id="grid"></div>
+<script>
+
+const GAP   = 3;
+const SPEED = 0.4;
+const ZOOM  = 1.2;
+
+const DIRS = [
+  { dx: -1, dy: -1 },
+  { dx:  1, dy: -1 },
+  { dx: -1, dy:  1 },
+  { dx:  1, dy:  1 },
+];
+const dirIdx = parseInt(new URLSearchParams(location.search).get('dir') ?? '') || (Math.random() * 4) | 0;
+const dir = DIRS[dirIdx];
+
+const grid = document.getElementById('grid');
+let pageW = 0, pageH = 0;
+let baseCols = 1, baseRows = 1, cols = 2;
+
+function resize() {
+  const cellW = Math.floor((window.innerWidth  - GAP * (baseCols - 1)) / baseCols);
+  const cellH = Math.floor((window.innerHeight - GAP * (baseRows - 1)) / baseRows);
+  const cell  = Math.floor(Math.max(cellW, cellH) * ZOOM);
+  pageW = cell * baseCols + GAP * (baseCols - 1);
+  pageH = cell * baseRows + GAP * (baseRows - 1);
+
+  grid.style.gridTemplateColumns = `repeat(${cols}, ${cell}px)`;
+  grid.querySelectorAll('.cell').forEach(c => { c.style.width = cell + 'px'; });
+}
+
+window.addEventListener('resize', resize);
+
+function startCSSAnimation() {
+  const pxPerSec = SPEED * 60;
+  const startX = dir.dx > 0 ? -pageW : 0;
+  const endX   = dir.dx > 0 ? 0 : -pageW;
+  const startY = dir.dy > 0 ? -pageH : 0;
+  const endY   = dir.dy > 0 ? 0 : -pageH;
+  const duration = pageW / pxPerSec;
+
+  grid.style.setProperty('--start-x', startX + 'px');
+  grid.style.setProperty('--start-y', startY + 'px');
+  grid.style.setProperty('--end-x',   endX   + 'px');
+  grid.style.setProperty('--end-y',   endY   + 'px');
+  grid.style.setProperty('--duration', duration + 's');
+}
+
+fetch('games.json')
+  .then(res => res.json())
+  .then(GAMES => {
+
+    // ── Shuffle ──────────────────────────────────────────────────────────────
+    for (let i = GAMES.length - 1; i > 0; i--) {
+      const j = (Math.random() * (i + 1)) | 0;
+      [GAMES[i], GAMES[j]] = [GAMES[j], GAMES[i]];
+    }
+
+    // ── Grid layout ──────────────────────────────────────────────────────────
+    baseCols = Math.ceil(Math.sqrt(GAMES.length));
+    baseRows = Math.ceil(GAMES.length / baseCols);
+    cols     = baseCols * 2;
+
+    // ── Build cells ──────────────────────────────────────────────────────────
+    [...GAMES, ...GAMES, ...GAMES, ...GAMES].forEach(game => {
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+
+      const img = document.createElement('img');
+      img.src = game.cover;
+      img.onload  = () => cell.classList.add('ready');
+      img.onerror = () => cell.classList.add('ready');
+      cell.appendChild(img);
+
+      grid.appendChild(cell);
+    });
+
+    resize();
+    startCSSAnimation();
+    window.parent.postMessage('grid-ready', '*');
+
+    // FPS check — hide grid if hardware acceleration is off or device is too slow
+    let frames = 0, start = null;
+    function checkFPS(ts) {
+      if (!start) start = ts;
+      frames++;
+      if (ts - start < 1000) { requestAnimationFrame(checkFPS); return; }
+      const fps = frames / ((ts - start) / 1000);
+      if (fps < 24) window.parent.postMessage('grid-low', '*');
+    }
+    requestAnimationFrame(checkFPS);
+  });
+</script>
+</body>
+</html>
