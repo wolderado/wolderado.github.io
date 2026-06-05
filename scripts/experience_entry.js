@@ -96,7 +96,7 @@ createEntry({
     role: 'Game Feel Programmer',
     company: 'Juicy Plume',
     year: 'Nov 2024 - Jan 2025',
-    description: 'Clonizer combines Hex-based tactics and roguelike deckbuilding! (Published by <a href="https://store.steampowered.com/publisher/rogueduck" target="_blank" rel="noopener">RogueDuck Interactive</a>).<br> I\'ve worked specifically as a Game Juice/Game Feel programmer to improve the general feel of the game. We started working right away after I researched the flat feeling parts I can improve upon',
+    description: 'Clonizer combines Hex-based tactics and roguelike deckbuilding! (Published by <a href="https://store.steampowered.com/publisher/rogueduck" target="_blank" rel="noopener">RogueDuck Interactive</a>).<br> I\'ve worked specifically as a Game Juice/Game Feel programmer to improve the general feel of the game. Dove straight into development after we identified the areas lacking in feel and polish.',
     responsibilities: [
         'Hired specifically to improve game feel across the project.',
         'Reworked many UI panels, gameplay mechanics, VFX, and shaders to make them more responsive, alive and fun.',
