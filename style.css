@@ -5,7 +5,7 @@
   --color-bg:           #131416;
   --color-container:    #1E2025;
   --color-text:         #EDF0F4;
-  --color-text-muted:   #878d9b;
+  --color-text-muted:   #aeb5c6;
   --color-accent:       #5B9BD5;
   --color-btn:          #5B9BD5;
   --color-btn-text:     #FFFFFF;
@@ -288,6 +288,9 @@ a {
   position: relative;
   padding: 4rem 2rem;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro-bg {
@@ -345,13 +348,13 @@ body.low-fps .intro-content {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(19, 20, 22, 0.92);
+  background: rgba(19, 20, 22, 0.8);
 }
 
 .intro-content {
-  background: color-mix(in srgb, var(--color-bg) 30%, transparent);
+  background: color-mix(in srgb, var(--color-bg) 70%, transparent);
   padding: 2rem 2.5rem;
-  border-radius: 20px;
+  border-radius: 15px;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
