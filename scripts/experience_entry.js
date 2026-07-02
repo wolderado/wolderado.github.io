@@ -64,7 +64,7 @@ createEntry({
     role: 'Lead Developer',
     company: 'NightByte Games',
     year: 'Jan 2022 - Apr 2026',
-    description: 'IT HAS YOUR FACE. Now it wants your life. Hide, seek, and try to kill your clone in this deceptively simple first-person horror roguelite. This project is published by <a href="https://www.bhvr.com" target="_blank" rel="noopener">Behaviour Interactive</a>.',
+    description: 'IT HAS YOUR FACE. Now it wants your life. Hide, seek, and try to kill your clone in this deceptively simple first-person horror roguelite. This project is published by <a href="https://www.bhvr.com" target="_blank" rel="noopener">Behaviour Interactive</a> (Creators behind Dead By Daylight).',
     responsibilities: [
         'Personally programmed the majority of gameplay systems and also worked on game design, level design, environment art, UI, pixel art, and sound effects.',
         'Led full development lifecycle: Pre-production, Early Access, 1.0 launch, and singleplayer, multiplayer and post-launch updates.',
