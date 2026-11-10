@@ -63,9 +63,27 @@ a {
 }
 
 .entry-title {
-  font-size: clamp(1rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.15rem, 2.8vw, 1.9rem);
   min-width: 0;
   flex-shrink: 1;
+}
+
+.entry-title-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.entry-title-link:hover,
+.entry-title-link:focus {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.entry-title-link i {
+  font-size: 0.85em;
 }
 
 .btn-active-tag {
@@ -185,16 +203,6 @@ a {
   color: var(--color-text-muted);
 }
 
-
-.icon-link {
-  color: var(--color-text-muted);
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.icon-link:hover {
-  color: var(--color-text);
-}
 
 .alt .table,
 .alt .table td,

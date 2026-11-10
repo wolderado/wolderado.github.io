@@ -20,8 +20,9 @@ function createEntry({ youtubeId, image, title, role, company, year, description
         <div class="col-md-6 order-md-2 text-start">
             <div class="d-flex align-items-center justify-content-between gap-2">
                 <h2 class="d-inline-flex align-items-center gap-2 mb-0 entry-title">
-                    ${title}
-                    ${link ? `<a href="${link}" target="_blank" rel="noopener" class="icon-link"><i class="bi-arrow-up-right-square-fill"></i></a>` : ''}
+                    ${link
+                        ? `<a href="${link}" target="_blank" rel="noopener" class="entry-title-link">${title}<i class="bi-arrow-up-right-square-fill"></i></a>`
+                        : title}
                 </h2>
                 ${role ? `<span class="entry-role">${role}</span>` : ''}
             </div>
