@@ -53,6 +53,19 @@
   },
   {
     "show": 1,
+    "title": "Light The Moon",
+    "description": "Fly through ancient ruins and light them up in this short atmospheric game.",
+    "cover": "https://img.itch.zone/aW1nLzMxOTM4MzkzLnBuZw==/315x250%23c/YLcQFc.png",
+    "link": "https://wolderado.itch.io/lightthemoon",
+    "play": "LightTheMoon",
+    "tags": [
+      "Unity",
+      "Browser"
+    ],
+    "download": ""
+  },
+  {
+    "show": 1,
     "title": "Slot of Death",
     "description": "You've made a deal with the devil. Now you must play slot machines to feed him or it will feed on you!",
     "cover": "https://img.itch.zone/aW1nLzIzNDgxODUyLnBuZw==/original/756Hsr.png",
